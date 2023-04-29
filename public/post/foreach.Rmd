@@ -1,0 +1,39 @@
+---
+title: "foreach"
+author: "Кузьмин"
+date: "2023-04-29"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Оптимизация вычислений с использованием функций пакета foreach
+
+Пакет foreach предоставляет конструкцию цикла для повторного выполнения R-кода.Основная причина использования пакета foreach заключается в том, что он поддерживает параллельное выполнение.
+
+### Общая конструкция
+
+```{r x}
+library(foreach)
+x <- foreach(i=1:3) %do% sqrt(i)
+x
+```
+### Параллельное вычисление
+Параллельное вычисление осуществляется с помощью пакета "doParallel"
+
+```{r doparal}
+library(doParallel)
+library(foreach)
+
+cl <- makeCluster(4)    # Создаем кластер на четыре потоков
+registerDoParallel(cl)  # Регистрируем кластер
+
+system.time({
+  foreach(i=1:8) %dopar% Sys.sleep(1) # останавливаем цикл на секунду
+})
+
+stopCluster(cl)
+
+```

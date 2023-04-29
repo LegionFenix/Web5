@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Website</title>
+    <link>https://tangerine-zuccutto-c1b3d8.netlify.app/post/</link>
+    <description>Recent content in Posts on Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 29 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tangerine-zuccutto-c1b3d8.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>foreach</title>
+      <link>https://tangerine-zuccutto-c1b3d8.netlify.app/post/foreach/</link>
+      <pubDate>Sat, 29 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://tangerine-zuccutto-c1b3d8.netlify.app/post/foreach/</guid>
+      <description>Оптимизация вычислений с использованием функций пакета foreach Пакет foreach предоставляет конструкцию цикла для повторного выполнения R-кода.Основная причина использования пакета foreach заключается в том, что он поддерживает параллельное выполнение.
+Общая конструкция library(foreach) ## Warning: пакет &amp;#39;foreach&amp;#39; был собран под R версии 4.2.2 x &amp;lt;- foreach(i=1:3) %do% sqrt(i) x ## [[1]]## [1] 1## ## [[2]]## [1] 1.414214## ## [[3]]## [1] 1.732051 Параллельное вычисление Параллельное вычисление осуществляется с помощью пакета &amp;ldquo;doParallel&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>ggplot2</title>
+      <link>https://tangerine-zuccutto-c1b3d8.netlify.app/post/ggplot2/</link>
+      <pubDate>Sat, 29 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://tangerine-zuccutto-c1b3d8.netlify.app/post/ggplot2/</guid>
+      <description>ggplot2 ggplot2 — это система декларативного создания графики.
+Пример точечной диаграммы library(ggplot2) ## Warning: пакет &amp;#39;ggplot2&amp;#39; был собран под R версии 4.2.2 ggplot(mtcars, aes(x = wt, y = mpg)) + geom_point(color = &amp;#34;blue&amp;#34;) + ggtitle(&amp;#34;Зависимость расхода топлива \n от веса автомобиля&amp;#34;) + xlab(&amp;#34;Вес автомобиля&amp;#34;) + ylab(&amp;#34;Расход топлива&amp;#34;) Пример гистограммы library(ggplot2) ggplot(mtcars, aes(x = mpg)) + geom_histogram(bins = 10, fill = &amp;#34;green&amp;#34;, color = &amp;#34;black&amp;#34;) + xlab(&amp;#34;Расход топлива&amp;#34;) + ylab(&amp;#34;Количество автомобилей&amp;#34;) Пример ящика с усами library(ggplot2) ggplot(mtcars, aes(x = wt, y = mpg)) + geom_boxplot(fill = &amp;#34;green&amp;#34;) + ggtitle(&amp;#34;Зависимость расхода топлива \n от веса автомобиля&amp;#34;) + xlab(&amp;#34;Вес автомобиля&amp;#34;) + ylab(&amp;#34;Расход топлива&amp;#34;) ## Warning: Continuous x aesthetic## ℹ did you forget `aes(group = .</description>
+    </item>
+    
+    <item>
+      <title>leaflet.extras</title>
+      <link>https://tangerine-zuccutto-c1b3d8.netlify.app/post/leaflet.extras/</link>
+      <pubDate>Sat, 29 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://tangerine-zuccutto-c1b3d8.netlify.app/post/leaflet.extras/</guid>
+      <description>Функции пакета leaflet.extras Пакет предоставляющий дополнительную функциональность пакету leaflet R с использованием различных плагинов
+Функция addBounceMarkers library(leaflet.extras) ## Warning: пакет &#39;leaflet.extras&#39; был собран под R версии 4.2.2## Загрузка требуемого пакета: leaflet## Warning: пакет &#39;leaflet&#39; был собран под R версии 4.2.2leaflet() %&amp;gt;% addTiles() %&amp;gt;% addBounceMarkers(40, 70, duration = 10000, height = 100) Функция addPulseMarkers library(leaflet.extras) leaflet() %&amp;gt;% addTiles() %&amp;gt;% addPulseMarkers( lng = -118.456554, lat = 34.078039, label = &amp;#34;This is a label&amp;#34;, icon = makePulseIcon(heartbeat = 0.</description>
+    </item>
+    
+  </channel>
+</rss>

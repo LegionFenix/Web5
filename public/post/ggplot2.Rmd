@@ -1,0 +1,46 @@
+---
+title: "ggplot2"
+author: "Кузьмин"
+date: "2023-04-29"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## ggplot2
+
+ggplot2 — это система декларативного создания графики.
+
+### Пример точечной диаграммы
+
+```{r point, echo=TRUE}
+library(ggplot2)
+ggplot(mtcars, aes(x = wt, y = mpg)) +
+  geom_point(color = "blue") +
+  ggtitle("Зависимость расхода топлива \n от веса автомобиля") +
+  xlab("Вес автомобиля") +
+  ylab("Расход топлива")
+```
+
+### Пример гистограммы
+
+```{r hist, echo=TRUE}
+library(ggplot2)
+ggplot(mtcars, aes(x = mpg)) +
+  geom_histogram(bins = 10, fill = "green", color = "black") +
+  xlab("Расход топлива") +
+  ylab("Количество автомобилей")
+```
+
+### Пример ящика с усами
+
+```{r box, echo=TRUE}
+library(ggplot2)
+ggplot(mtcars, aes(x = wt, y = mpg)) +
+  geom_boxplot(fill = "green") +
+  ggtitle("Зависимость расхода топлива \n от веса автомобиля") +
+  xlab("Вес автомобиля") +
+  ylab("Расход топлива")
+```
