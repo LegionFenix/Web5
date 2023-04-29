@@ -18,7 +18,7 @@ params:
     love. Enjoy!
   Email: your_email
   Favicon: /favicon.ico
-  GithubID: https://github.com/LegionFenix
+  GithubID: /LegionFenix
   HeaderHostname: gohugo.io
   HeaderUsername: hugo
   LinkedInID: your_linkedin
