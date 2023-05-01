@@ -6,7 +6,16 @@
     <description>Recent content in Pos on Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 29 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tangerine-zuccutto-c1b3d8.netlify.app/pos/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tangerine-zuccutto-c1b3d8.netlify.app/pos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>presentation</title>
+      <link>https://tangerine-zuccutto-c1b3d8.netlify.app/pos/presentation/</link>
+      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://tangerine-zuccutto-c1b3d8.netlify.app/pos/presentation/</guid>
+      <description>Находится в разработке </description>
+    </item>
+    
     <item>
       <title>foreach</title>
       <link>https://tangerine-zuccutto-c1b3d8.netlify.app/pos/foreach/</link>
