@@ -2,18 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://tangerine-zuccutto-c1b3d8.netlify.app/presentation/</loc>
-    <lastmod>2023-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tangerine-zuccutto-c1b3d8.netlify.app/presentation/presentation/</loc>
-    <lastmod>2023-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tangerine-zuccutto-c1b3d8.netlify.app/presentation/</loc>
-    <lastmod>2023-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tangerine-zuccutto-c1b3d8.netlify.app/</loc>
-    <lastmod>2023-05-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://tangerine-zuccutto-c1b3d8.netlify.app/about/</loc>
     <lastmod>2023-04-29T00:00:00+00:00</lastmod>
   </url><url>
@@ -27,6 +15,9 @@
     <lastmod>2023-04-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tangerine-zuccutto-c1b3d8.netlify.app/post/</loc>
+    <lastmod>2023-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tangerine-zuccutto-c1b3d8.netlify.app/</loc>
     <lastmod>2023-04-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tangerine-zuccutto-c1b3d8.netlify.app/categories/</loc>
