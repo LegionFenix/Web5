@@ -16,8 +16,8 @@ params:
   Email: /inbox/
   Favicon: /favicon.ico
   GithubID: /LegionFenix
-  HeaderHostname: gohugo.io
-  HeaderUsername: hugo
-  Name: Главная страница
+  HeaderHostname: site.ru
+  HeaderUsername: Web
+  Name: Главная страницаs
   ProfilePicture: /profile.jpg
 
