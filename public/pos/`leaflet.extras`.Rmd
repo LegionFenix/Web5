@@ -1,0 +1,58 @@
+---
+title: "leaflet.extras"
+author: "Кузьмин"
+date: "2023-04-29"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Функции пакета leaflet.extras
+
+Пакет предоставляющий дополнительную функциональность пакету leaflet R с использованием различных плагинов
+
+### Функция addBounceMarkers
+
+```{r xc}
+library(leaflet.extras)
+leaflet() %>%
+  addTiles() %>%
+  addBounceMarkers(40, 70, duration = 10000, height = 100)
+```
+
+### Функция addPulseMarkers
+
+```{r }
+library(leaflet.extras)
+leaflet() %>%
+  addTiles() %>%
+  addPulseMarkers(
+    lng = -118.456554, lat = 34.078039,
+    label = "This is a label",
+    icon = makePulseIcon(heartbeat = 0.9))
+```
+
+### Функция addGeodesicPolylines
+
+```{r }
+library(leaflet.extras)
+berlin <- c(52.51, 13.4)
+losangeles <- c(34.05, -118.24)
+santiago <- c(-33.44, -70.71)
+tokio <- c(35.69, 139.69)
+sydney <- c(-33.91, 151.08)
+capetown <- c(-33.91, 18.41)
+calgary <- c(51.05, -114.08)
+hammerfest <- c(70.67, 23.68)
+barrow <- c(71.29, -156.76)
+df <- as.data.frame(rbind(hammerfest, calgary, losangeles, santiago, capetown, tokio, barrow))
+names(df) <- c("lat","lng")
+leaflet(df) %>%
+  addTiles() %>%
+  addGeodesicPolylines(lng = ~lng, lat = ~lat, weight = 4, color = "red",
+                       steps = 100) %>%
+  addCircleMarkers(df, lat = ~lat,lng = ~lng, radius = 3, stroke = FALSE,
+                   fillColor = "black", fillOpacity = 5)
+```

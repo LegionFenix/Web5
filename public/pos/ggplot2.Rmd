@@ -5,7 +5,9 @@ date: "2023-04-29"
 output: html_document
 ---
 
-
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
 
 ## ggplot2
 
@@ -13,16 +15,8 @@ ggplot2 — это система декларативного создания 
 
 ### Пример точечной диаграммы
 
-
-```r
+```{r point, echo=TRUE}
 library(ggplot2)
-```
-
-```
-## Warning: пакет 'ggplot2' был собран под R версии 4.2.2
-```
-
-```r
 ggplot(mtcars, aes(x = wt, y = mpg)) +
   geom_point(color = "blue") +
   ggtitle("Зависимость расхода топлива \n от веса автомобиля") +
@@ -30,12 +24,9 @@ ggplot(mtcars, aes(x = wt, y = mpg)) +
   ylab("Расход топлива")
 ```
 
-<img src="/post/ggplot2_files/figure-html/point-1.png" width="672" />
-
 ### Пример гистограммы
 
-
-```r
+```{r hist, echo=TRUE}
 library(ggplot2)
 ggplot(mtcars, aes(x = mpg)) +
   geom_histogram(bins = 10, fill = "green", color = "black") +
@@ -43,12 +34,9 @@ ggplot(mtcars, aes(x = mpg)) +
   ylab("Количество автомобилей")
 ```
 
-<img src="/post/ggplot2_files/figure-html/hist-1.png" width="672" />
-
 ### Пример ящика с усами
 
-
-```r
+```{r box, echo=TRUE}
 library(ggplot2)
 ggplot(mtcars, aes(x = wt, y = mpg)) +
   geom_boxplot(fill = "green") +
@@ -56,10 +44,3 @@ ggplot(mtcars, aes(x = wt, y = mpg)) +
   xlab("Вес автомобиля") +
   ylab("Расход топлива")
 ```
-
-```
-## Warning: Continuous x aesthetic
-## ℹ did you forget `aes(group = ...)`?
-```
-
-<img src="/post/ggplot2_files/figure-html/box-1.png" width="672" />
